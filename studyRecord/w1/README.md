@@ -29,8 +29,8 @@ git 本身分成三個區域: 工作區(working directory)、暫存區(staging a
 
 一開始都要先進行使用者的設定，之後的資料傳輸也都會透過者個使用者ID進行傳輸
 
-‵‵‵
+```
 git config --global user.name "使用者名稱"
 
 git config --global user.email "信箱名稱"
-‵‵‵
+```
