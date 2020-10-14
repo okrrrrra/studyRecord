@@ -69,11 +69,17 @@ repository 在 github 上是類似專案資料夾的地方 在電腦上就直接
 
 若是要查看 commit 過甚麼的紀錄
 
+log 呈現方式會是這樣:
+
+* commitID   message 
+11
 ```
   git log --oneline  //查看簡潔的 commit 紀錄
-```
 
-* commit ID   message 
+  git checkout commit ID  //可以回到該 commit 時的資料狀態
+
+  git checkout master  //若要切換回當前版本則是輸入這樣
+```
 
 要反悔取消 commit 可以用以下程式碼
 
@@ -129,7 +135,7 @@ repository 在 github 上是類似專案資料夾的地方 在電腦上就直接
 
   cd " file name "
 
-  git checkout -b " branch name "  //切出自己的分支
+  git checkout -b " branch name "  //切出自己的分支並進入分支( -b 是切出分支並進入)
 
   git commit -am " message "  //若是分支檔案有修改一樣要 commit 到 repo
 
@@ -140,11 +146,16 @@ repository 在 github 上是類似專案資料夾的地方 在電腦上就直接
 
 7.  feature branch 建立
 ```
-  git checkout -b " example "  //建立一個叫 example 的分支
+  git branch " example "  //建立一個叫 example 的分支
 
   git commit -am "message"  //commit 到本地端
 
   git pull origin example 
+```
+
+若是想知道自己目前位在哪個分支
+```
+  git branch -v  //顯示目前所在分支位置及 commit version 
 ```
 
 8.  merge & delete branches 
