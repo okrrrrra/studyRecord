@@ -30,9 +30,9 @@ git 本身分成三個區域: 工作區 (working directory) 、暫存區 (stagin
 一開始都要先進行使用者的設定，之後的資料傳輸也都會透過者個使用者ID進行傳輸
 
 ```
-  git config --global user.name "user name"
+  git config --global user.name " user name "
 
-  git config --global user.email "mail name"
+  git config --global user.email " mail name "
 ```
 
 4.建立 repository (檔案庫)
@@ -40,15 +40,15 @@ git 本身分成三個區域: 工作區 (working directory) 、暫存區 (stagin
 repository 在 github 上是類似專案資料夾的地方 在電腦上就直接新增一個資料夾當作我們要進行 git 控制的地方就可以了
 
 ```
-  mkdir "file name"
+  mkdir " file name "
 ```
 
 新增完就進入資料夾建立第一個文件
 
 ```
-  cd "file name"
+  cd " file name "
 
-  touch "file name"
+  touch " file name " 
   
   git init  //將資料夾建置成 git 版控的狀態
 ```
@@ -60,9 +60,37 @@ repository 在 github 上是類似專案資料夾的地方 在電腦上就直接
 ```
   git status //狀態檢視
   
-  git add "file name"  //將檔案加入追蹤
+  git add " file name "  //將檔案加入追蹤
   
   git diff  //查看跟上次 commit 的差異
   
-  git commit -m "message about what u do this time"  //將檔案commit 進入repository
+  git commit -m " message about what u do this time "  //將檔案commit 進入repository
 ```
+
+要反悔取消 commit 可以用以下程式碼
+
+```
+  git rm --cached " file name " //還沒 commit 的修改可以透過這樣回到工作區
+
+  git reset HARD  //可以把資料還原到head的狀態
+```
+
+修改後的檔案都要記得再一次進行 add & commit 的動作
+
+```
+  git commit -am " message "
+```
+
+到剛剛都是在local端進行，接下來要把檔案跟遠端連結，要先申請一個 github 帳號 [Github](https://github.com/)，並在 git 加入使用者帳號
+
+```
+  git config --global user.username "ur github account"
+```
+
+在 github 右上角新增一個 repository，
+
+  `.gitignore`  :一些要讓 git 忽略的資料，通常會把一些比較私人的使用者資料丟進去
+
+  `README.md` :在 repository 第一面會出現的 markdown 語法寫成的檔案，通常是一些注意事項或使用者須知
+
+  `LICENSE` :專案使用何種授權方式
