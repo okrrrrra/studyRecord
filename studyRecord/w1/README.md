@@ -1,7 +1,7 @@
 # 第一周學習紀錄
-1.git and github 的熟悉及應用學習
+1. git and github 的熟悉及應用學習
 
-2.command line 的指令熟悉
+2. command line 的指令熟悉
 ***
 ## git 及 github 
 
@@ -15,9 +15,9 @@
 
 2. git 介紹
 
-git 透過本地端(local)及remote(遠端)進行檔案的上傳及同步，使用者可以在 local 進行修改，修改完在選擇要上載哪一個版本的檔案
+git 透過本地端 (local) 及remote (遠端) 進行檔案的上傳及同步，使用者可以在 local 進行修改，修改完在選擇要上載哪一個版本的檔案
 
-git 本身分成三個區域: 工作區(working directory)、暫存區(staging area)、檔案庫(repositories)
+git 本身分成三個區域: 工作區 (working directory) 、暫存區 (staging area) 、檔案庫 (repositories) 
 
 * **工作區: 還沒被 add 列入觀察的檔案**
 * **暫存區: 透過指令 git add 從工作區列入暫存區**
@@ -30,7 +30,27 @@ git 本身分成三個區域: 工作區(working directory)、暫存區(staging a
 一開始都要先進行使用者的設定，之後的資料傳輸也都會透過者個使用者ID進行傳輸
 
 ```
-git config --global user.name "使用者名稱"
+  git config --global user.name "使用者名稱"
 
-git config --global user.email "信箱名稱"
+  git config --global user.email "信箱名稱"
 ```
+
+4.建立 repository (檔案庫)
+
+repository 在 github 上是類似專案資料夾的地方 在電腦上就直接新增一個資料夾當作我們要進行 git 控制的地方就可以了
+
+```
+  mkdir "資料夾名稱"
+```
+
+新增完就進入資料夾建立第一個文件
+
+```
+  cd "資料夾路徑名稱"
+
+  touch "檔案名稱"
+  
+  git init  //將資料夾建置成 git 版控的狀態
+```
+
+這時資料夾內新增了一個 .git 檔就代表建置成功了
