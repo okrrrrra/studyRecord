@@ -30,9 +30,9 @@ git 本身分成三個區域: 工作區 (working directory) 、暫存區 (stagin
 一開始都要先進行使用者的設定，之後的資料傳輸也都會透過者個使用者ID進行傳輸
 
 ```
-  git config --global user.name "使用者名稱"
+  git config --global user.name "user name"
 
-  git config --global user.email "信箱名稱"
+  git config --global user.email "mail name"
 ```
 
 4.建立 repository (檔案庫)
@@ -40,17 +40,29 @@ git 本身分成三個區域: 工作區 (working directory) 、暫存區 (stagin
 repository 在 github 上是類似專案資料夾的地方 在電腦上就直接新增一個資料夾當作我們要進行 git 控制的地方就可以了
 
 ```
-  mkdir "資料夾名稱"
+  mkdir "file name"
 ```
 
 新增完就進入資料夾建立第一個文件
 
 ```
-  cd "資料夾路徑名稱"
+  cd "file name"
 
-  touch "檔案名稱"
+  touch "file name"
   
   git init  //將資料夾建置成 git 版控的狀態
 ```
 
 這時資料夾內新增了一個 .git 檔就代表建置成功了
+
+5.git 狀態檢視及修改新增 commit 
+
+```
+  git status //狀態檢視
+  
+  git add "file name"  //將檔案加入追蹤
+  
+  git diff  //查看跟上次 commit 的差異
+  
+  git commit -m "message about what u do this time"  //將檔案commit 進入repository
+```
