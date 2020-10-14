@@ -72,7 +72,7 @@ repository 在 github 上是類似專案資料夾的地方 在電腦上就直接
 log 呈現方式會是這樣:
 
 * commitID   message 
-11
+
 ```
   git log --oneline  //查看簡潔的 commit 紀錄
 
