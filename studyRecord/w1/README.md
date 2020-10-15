@@ -170,9 +170,7 @@ B
 
   git pull origin master  //pull 資料上去
 ```
-<<<<<<< HEAD
-=======
 
 資料參考: [Git 與 Github 版本控制基本指令與操作入門教學](https://blog.techbridge.cc/2018/01/17/learning-programming-and-coding-with-python-git-and-github-tutorial/)
 、[淺談：我的前端學習之路](https://medium.com/@ClayGao/%E8%AB%87%E8%AB%87%E6%88%91%E7%9A%84%E5%89%8D%E7%AB%AF%E5%AD%B8%E7%BF%92%E4%B9%8B%E8%B7%AF-aeb1cbe55e6a)
->>>>>>> 7658b6d658cf4fe87e0e404ee58078a9fc76649a
+
