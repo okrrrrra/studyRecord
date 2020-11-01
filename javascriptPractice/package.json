@@ -1,0 +1,18 @@
+{
+  "name": "javascriptpractice",
+  "version": "1.0.0",
+  "description": "first npm",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/okrrrrra/npmgit.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.5.1"
+  }
+}
