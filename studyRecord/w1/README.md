@@ -53,7 +53,6 @@ repository 在 github 上是類似專案資料夾的地方 在電腦上就直接
   git init  //將資料夾建置成 git 版控的狀態
 ```
 
-B
 這時資料夾內新增了一個 .git 檔就代表建置成功了
 
 5.  git 狀態檢視及修改新增 commit 
@@ -72,7 +71,6 @@ B
 
 log 呈現方式會是這樣:
 
-B
 * commitID   message 
 
 ```
