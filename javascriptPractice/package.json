@@ -1,17 +1,21 @@
 {
   "name": "javascriptpractice",
   "version": "1.0.0",
-  "description": "first npm",
+  "description": "npmm",
   "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/okrrrrra/npmgit.git"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/okrrrrra/npmgit/issues"
+  },
+  "homepage": "https://github.com/okrrrrra/npmgit#readme",
   "dependencies": {
     "jquery": "^3.5.1"
   }
